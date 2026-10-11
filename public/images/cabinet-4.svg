@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#6B3A96"/><stop offset="1" stop-color="#2C1748"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <circle cx="1312" cy="180" r="220" fill="#F2B705" opacity="0.18"/>
+  <g fill="#FAF6FF" opacity="0.14"><circle cx="560" cy="460" r="110"/><rect x="760" y="380" width="280" height="200" rx="100"/><rect x="420" y="640" width="760" height="40" rx="20"/></g>
+  <text x="800" y="930" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" fill="#FAF6FF" opacity="0.65" letter-spacing="5">PHOTO À VENIR · ESPACE ENFANTS</text>
+</svg>
