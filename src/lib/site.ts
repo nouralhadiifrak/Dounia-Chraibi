@@ -44,10 +44,10 @@ export const media: {
   logo?: string;
   url?: string;
 }[] = [
-  { outlet: "MFM Radio", kind: "radio", show: "interview", date: "2026-09-28", logo: "/images/media/mfm.png" },
+  { outlet: "MFM Radio", kind: "radio", show: "interview", date: "2026-09-28", logo: "/images/media/mfm.png", url: "https://www.youtube.com/watch?v=UPo6AR9TNUU" },
   { outlet: "Medina FM", kind: "radio", show: "interview", date: "2026-06-15", logo: "/images/media/medinafm.png" },
   { outlet: "2M", kind: "tv", show: "news", date: "2023-10-25", logo: "/images/media/2m.png" },
-  { outlet: "2M", kind: "tv", show: "sabahiat", date: "2023-10-17", logo: "/images/media/2m.png" },
+  { outlet: "2M", kind: "tv", show: "sabahiat", date: "2023-10-17", logo: "/images/media/2m.png", url: "https://www.youtube.com/watch?v=gPwJRNdS0DY" },
 ];
 
 // Verbatim Google reviews (originals, not translated). Each paragraph is
