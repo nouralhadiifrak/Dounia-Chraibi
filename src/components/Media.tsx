@@ -25,11 +25,17 @@ export function Media({ dict, intlLocale }: { dict: Dictionary["media"]; intlLoc
                 key={`${m.outlet}-${m.date}`}
                 className="group flex flex-col overflow-hidden rounded-3xl border border-line bg-surface shadow-sm shadow-plum-950/5 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-plum-950/10"
               >
-                <div className="relative grid aspect-[5/2] place-items-center sm:aspect-[16/9] overflow-hidden bg-plum-950">
+                <div
+                  className={`relative grid aspect-[5/2] place-items-center overflow-hidden sm:aspect-[16/9] ${m.logo ? "border-b border-line bg-white" : "bg-plum-950"}`}
+                >
                   {m.logo ? (
-                    <div className="absolute inset-4 rounded-2xl bg-white">
-                      <Image src={m.logo} alt={m.outlet} fill sizes="20rem" className="object-contain p-4" />
-                    </div>
+                    <Image
+                      src={m.logo}
+                      alt={m.outlet}
+                      fill
+                      sizes="20rem"
+                      className="object-contain px-8 pb-5 pt-11 transition duration-300 group-hover:scale-105"
+                    />
                   ) : (
                     <>
                       <span aria-hidden="true" className="absolute -end-10 -top-10 size-32 rounded-full bg-sunflower/15 blur-2xl" />
