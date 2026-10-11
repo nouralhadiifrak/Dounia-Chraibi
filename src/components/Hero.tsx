@@ -8,7 +8,7 @@ export function Hero({ dict, portrait }: { dict: Dictionary["hero"]; portrait: s
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden bg-plum-950 text-mist"
+      className="relative isolate overflow-hidden bg-plum-950 uppercase text-mist"
     >
       {/* Ambient light and fine rings */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
@@ -37,7 +37,7 @@ export function Hero({ dict, portrait }: { dict: Dictionary["hero"]; portrait: s
             tag="p"
             text={dict.subtitle}
             delay={0.35}
-            className="mt-6 max-w-xl text-base leading-relaxed text-mist/75 sm:text-lg"
+            className="mt-6 max-w-xl text-sm leading-relaxed tracking-wide text-mist/75 sm:text-base"
           />
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
