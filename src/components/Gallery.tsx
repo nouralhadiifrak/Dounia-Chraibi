@@ -63,7 +63,7 @@ export function Gallery({ dict }: { dict: Dictionary["gallery"] }) {
           </div>
         </div>
 
-        <div className="relative mt-12">
+        <div className="relative mx-auto mt-12 max-w-3xl">
           <div
             ref={track}
             role="region"
@@ -82,14 +82,15 @@ export function Gallery({ dict }: { dict: Dictionary["gallery"] }) {
                 data-index={i}
                 aria-roledescription="slide"
                 aria-label={`${i + 1} / ${total}`}
-                className="relative aspect-[4/5] w-full shrink-0 snap-center overflow-hidden bg-surface-2 sm:aspect-[16/9]"
+                className="relative aspect-[4/3] w-full shrink-0 snap-center overflow-hidden bg-surface-2"
               >
                 <Photo
                   src={g.src}
                   alt={dict.captions[g.key]}
                   fill
-                  sizes="(min-width: 1280px) 80rem, 100vw"
+                  sizes="(min-width: 768px) 48rem, 100vw"
                   className="object-cover"
+                  style={{ objectPosition: g.position }}
                   loading={i === 0 ? "eager" : "lazy"}
                 />
                 <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-plum-950/85 via-plum-950/30 to-transparent p-6 pt-20 font-display text-2xl font-semibold text-mist sm:p-8 sm:text-3xl">

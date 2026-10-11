@@ -1,5 +1,5 @@
 import type { Dictionary } from "@/i18n/dictionaries";
-import { ArrowIcon, CalendarIcon, StarIcon } from "./Icons";
+import { ArrowIcon, CalendarIcon, StarIcon, TvIcon } from "./Icons";
 import { Photo } from "./Photo";
 import { BrandButton } from "./BrandButton";
 import { CurtainReveal } from "./fx/CurtainReveal";
@@ -64,6 +64,12 @@ export function Hero({ dict, portrait }: { dict: Dictionary["hero"]; portrait: s
               </span>
               {dict.rating}
             </li>
+            <li>
+              <a href="#media" className="flex items-center gap-2 text-mist underline-offset-4 hover:underline">
+                <TvIcon className="text-sunflower" />
+                {dict.seenOn}
+              </a>
+            </li>
             {dict.badges.map((b) => (
               <li key={b} className="flex items-center gap-2">
                 <span className="size-1 rounded-full bg-mist/50" aria-hidden="true" />
@@ -82,7 +88,7 @@ export function Hero({ dict, portrait }: { dict: Dictionary["hero"]; portrait: s
               fill
               preload
               sizes="(min-width: 1024px) 28rem, 24rem"
-              className="object-cover"
+              className="object-cover object-[50%_20%]"
             />
           </div>
         </div>

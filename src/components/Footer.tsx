@@ -12,6 +12,7 @@ async function currentYear() {
 export async function Footer({ dict, nav }: { dict: Dictionary["footer"]; nav: Dictionary["nav"] }) {
   const links = [
     ["#about", nav.about],
+    ["#media", nav.media],
     ["#services", nav.services],
     ["#cabinet", nav.cabinet],
     ["#booking", nav.booking],

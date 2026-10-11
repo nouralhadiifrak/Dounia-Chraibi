@@ -19,17 +19,36 @@ export const site = {
   mapsEmbedUrl: "https://www.google.com/maps?q=33.5687155,-7.6258364&z=17&output=embed",
 };
 
-// Placeholders until the real photos arrive: drop JPG/WebP files into
-// /public/images and update the paths here.
+// Photos of the practice. `position` is the focal point used when a photo is
+// cropped to fit the frame.
 export const gallery = [
-  { src: "/images/portrait.svg", key: "portrait" },
-  { src: "/images/cabinet-1.svg", key: "waiting" },
-  { src: "/images/cabinet-2.svg", key: "office" },
-  { src: "/images/cabinet-3.svg", key: "materials" },
-  { src: "/images/cabinet-4.svg", key: "kids" },
+  { src: "/images/portrait.webp", key: "portrait", position: "50% 25%" },
+  { src: "/images/seance.webp", key: "session", position: "50% 50%" },
+  { src: "/images/jeux.webp", key: "play", position: "50% 50%" },
+  { src: "/images/materiel.webp", key: "materials", position: "50% 50%" },
+  { src: "/images/bureau.webp", key: "office", position: "50% 50%" },
+  { src: "/images/salle.webp", key: "room", position: "50% 60%" },
+  { src: "/images/attente.webp", key: "waiting", position: "50% 50%" },
 ] as const;
 
 export type GalleryKey = (typeof gallery)[number]["key"];
+
+// TV and radio appearances, newest first. To show a channel's logo, add the
+// file to /public/images/media and set `logo` (e.g. "/images/media/2m.png").
+// `url` (optional) adds a button to watch or listen to the replay.
+export const media: {
+  outlet: string;
+  kind: "tv" | "radio";
+  show: "news" | "sabahiat" | "interview";
+  date: string;
+  logo?: string;
+  url?: string;
+}[] = [
+  { outlet: "MFM Radio", kind: "radio", show: "interview", date: "2026-09-28" },
+  { outlet: "Medina FM", kind: "radio", show: "interview", date: "2026-06-15" },
+  { outlet: "2M", kind: "tv", show: "news", date: "2023-10-25" },
+  { outlet: "2M", kind: "tv", show: "sabahiat", date: "2023-10-17" },
+];
 
 // Verbatim Google reviews (originals, not translated). Each paragraph is
 // rendered on its own line.

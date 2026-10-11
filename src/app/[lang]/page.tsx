@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { Media } from "@/components/Media";
 import { MobileActionBar } from "@/components/MobileActionBar";
 import { Reviews } from "@/components/Reviews";
 import { Services } from "@/components/Services";
@@ -62,6 +63,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       <main>
         <Hero dict={dict.hero} portrait={gallery[0].src} />
         <About dict={dict.about} />
+        <Media dict={dict.media} intlLocale={intlLocale[lang]} />
         <Services dict={dict.services} bookLabel={dict.nav.book} />
         <Gallery dict={dict.gallery} />
         <Reviews dict={dict.reviews} />

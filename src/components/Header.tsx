@@ -32,6 +32,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Nav }) {
 
   const links = [
     ["#about", dict.about],
+    ["#media", dict.media],
     ["#services", dict.services],
     ["#cabinet", dict.cabinet],
     ["#reviews", dict.reviews],

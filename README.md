@@ -23,7 +23,9 @@ Without Google credentials, `npm run dev` runs booking in **demo mode**: the for
 | Colours and fonts | `src/app/globals.css`, `src/app/[lang]/layout.tsx` |
 | Logo | `src/components/Logo.tsx`, `src/app/icon.svg` |
 
-**Photos:** the gallery uses placeholders (`public/images/*.svg`). Add real photos (JPG/WebP, about 1600×1000 for the practice and 800×1000 for the portrait) to `public/images/` and update the paths in `src/lib/site.ts`. The first gallery photo is also the hero portrait.
+**Photos** live in `public/images/` (WebP, listed in `src/lib/site.ts` → `gallery`). The first one is also the hero portrait. To change a crop, edit its `position` (focal point). The originals uploaded to `photos chraibi/` are not used by the site.
+
+**Media (TV / radio):** edit `media` in `src/lib/site.ts`. To show a channel's logo, add the file to `public/images/media/` (PNG or SVG) and set `logo: "/images/media/2m.png"`. Add `url` to show a "Watch / Listen" button.
 
 **Reviews** in `src/lib/site.ts` are copied verbatim from Google. Do not edit their text.
 
