@@ -7,7 +7,7 @@ const icons = [ClipboardIcon, SpeechIcon, FamilyIcon];
 export function About({ dict }: { dict: Dictionary["about"] }) {
   return (
     <section id="about" className="py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-20 lg:px-8">
         <div>
           <SectionHeading kicker={dict.kicker} title={dict.title} align="start" />
           <div className="mt-8 space-y-5 text-base leading-[1.8] text-muted sm:text-lg">

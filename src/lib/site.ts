@@ -16,7 +16,7 @@ export const site = {
   geo: { lat: 33.5687155, lng: -7.6258364 },
   mapsUrl:
     "https://www.google.com/maps/place/Chra%C3%AFbi+Dounia+-+Orthophoniste+a+Casablanca+Abdelmoumen/@33.5632812,-7.6314527,4233m/data=!3m1!1e3!4m6!3m5!1s0x825e94ed286c0dad:0x261f13d722cca320!8m2!3d33.5687155!4d-7.6258364!16s%2Fg%2F11k4m1p2wr",
-  mapsEmbedUrl: "https://www.google.com/maps?q=33.5687155,-7.6258364&z=17&output=embed",
+  mapsEmbedUrl: "https://maps.google.com/maps?q=33.5687155,-7.6258364&z=17&hl=fr&output=embed",
 };
 
 // Photos of the practice. `position` is the focal point used when a photo is

@@ -122,7 +122,7 @@ export function Booking({ dict, lang, intlLocale }: { dict: Dictionary["booking"
 
   return (
     <section id="booking" className="bg-surface-2 py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20 lg:px-8">
         <div>
           <SectionHeading kicker={dict.kicker} title={dict.title} intro={dict.intro} align="start" />
           <div className="mt-10 space-y-4 text-sm text-muted">

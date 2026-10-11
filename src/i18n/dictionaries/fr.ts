@@ -25,7 +25,7 @@ const fr = {
     eyebrow: "Orthophoniste · Casablanca",
     title: "Dr Dounia Chraïbi",
     subtitle:
-      "Un accompagnement orthophonique attentif et bienveillant pour les enfants, les adolescents et les adultes, dans un cadre calme et rassurant.",
+      "L’orthophoniste est le professionnel de santé de la communication : il évalue et rééduque les troubles de la parole, du langage oral et écrit et des apprentissages. Dr Dounia Chraïbi accompagne enfants, adolescents et adultes avec rigueur et bienveillance, une approche saluée par les familles et partagée sur 2M et à la radio.",
     ctaAbout: "Découvrir l’orthophoniste",
     ctaBook: "Prendre rendez-vous",
     rating: "5,0 sur Google",
@@ -157,6 +157,7 @@ const fr = {
     whatsapp: "WhatsApp",
     email: "E-mail",
     directions: "Itinéraire",
+    openMaps: "Ouvrir dans Google Maps",
     mapTitle: "Carte du cabinet, Bd Abdelmoumen à Casablanca",
     closed: "Fermé",
     days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],

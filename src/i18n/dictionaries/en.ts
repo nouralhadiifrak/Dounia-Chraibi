@@ -27,7 +27,7 @@ const en: Dictionary = {
     eyebrow: "Speech therapist · Casablanca",
     title: "Dr Dounia Chraïbi",
     subtitle:
-      "Attentive, caring speech and language therapy for children, teenagers and adults, in a calm and reassuring setting.",
+      "A speech therapist is the health professional for communication: they assess and treat difficulties with speech, spoken and written language, and learning. Dr Dounia Chraïbi supports children, teenagers and adults with rigour and kindness, an approach praised by families and shared on 2M and on the radio.",
     ctaAbout: "About the therapist",
     ctaBook: "Book an appointment",
     rating: "5.0 on Google",
@@ -159,6 +159,7 @@ const en: Dictionary = {
     whatsapp: "WhatsApp",
     email: "Email",
     directions: "Directions",
+    openMaps: "Open in Google Maps",
     mapTitle: "Map of the practice, Bd Abdelmoumen, Casablanca",
     closed: "Closed",
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],

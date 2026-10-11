@@ -23,7 +23,7 @@ export function SectionHeading({
       <CurtainReveal
         tag="h2"
         text={title}
-        className="mt-4 pb-1 font-display text-4xl font-semibold leading-[1.1] text-balance sm:text-5xl"
+        className="mt-4 pb-1 font-display text-[2.1rem] font-semibold leading-[1.1] text-balance break-words hyphens-auto sm:text-5xl"
       />
       {intro && <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">{intro}</p>}
     </div>

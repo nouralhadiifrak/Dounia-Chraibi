@@ -35,7 +35,7 @@ export function Reviews({ dict }: { dict: Dictionary["reviews"] }) {
           <CurtainReveal
             tag="h2"
             text={dict.title}
-            className="mt-4 pb-1 font-display text-4xl font-semibold leading-[1.1] text-balance sm:text-5xl"
+            className="mt-4 pb-1 font-display text-[2.1rem] font-semibold leading-[1.1] text-balance break-words hyphens-auto sm:text-5xl"
           />
           <div className="mt-6 flex items-center justify-center gap-3">
             <span className="font-display text-5xl font-semibold" dir="ltr">5,0</span>
