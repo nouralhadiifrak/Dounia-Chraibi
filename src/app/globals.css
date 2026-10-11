@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Brand palette from the practice's card: violet #5B2A86 · sunflower #F2B705,
+   softened with lavender neutrals for a calm, reassuring feel. */
+:root {
+  --plum-950: #1d0f30;
+  --plum-900: #2c1748;
+  --plum-700: #5b2a86;
+  --mist: #faf6ff;
+  --sunflower: #f2b705;
+
+  --bg: #fbf9fd;
+  --surface: #ffffff;
+  --surface-2: #f3eef9;
+  --ink: #24143a;
+  --muted: #5d5170;
+  --line: rgb(36 20 58 / 0.1);
+  --brand: #5b2a86;
+  --brand-hover: #45206a;
+  --brand-ink: #ffffff;
+  --accent: #5b2a86;
+  --sun: #8a5d00;
+  --ring: rgb(91 42 134 / 0.35);
+  --sans: var(--font-nunito), var(--font-plex-arabic), ui-sans-serif, system-ui, sans-serif;
+  --serif: var(--font-outfit), var(--font-kufi), ui-sans-serif, system-ui, sans-serif;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #150b23;
+  --surface: #20133a;
+  --surface-2: #1a0f2e;
+  --ink: #f4eefb;
+  --muted: #bcb0cf;
+  --line: rgb(244 238 251 / 0.12);
+  --brand: #f2b705;
+  --brand-hover: #ffc933;
+  --brand-ink: #1d0f30;
+  --accent: #d5bdf0;
+  --sun: #f2b705;
+  --ring: rgb(242 183 5 / 0.45);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-ink: var(--brand-ink);
+  --color-accent: var(--accent);
+  --color-sun: var(--sun);
+  --color-plum-950: var(--plum-950);
+  --color-plum-900: var(--plum-900);
+  --color-plum-700: var(--plum-700);
+  --color-mist: var(--mist);
+  --color-sunflower: var(--sunflower);
+
+  --font-sans: var(--sans);
+  --font-display: var(--serif);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Arabic: Plex Sans Arabic for text, Noto Kufi Arabic for headings. */
+html[lang="ar"] {
+  --sans: var(--font-plex-arabic), var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --serif: var(--font-kufi), var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+html[lang="ar"] .tracking-kicker {
+  letter-spacing: 0;
+}
+
+::selection {
+  background: var(--plum-700);
+  color: var(--mist);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.tracking-kicker {
+  letter-spacing: 0.24em;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+dialog::backdrop {
+  background: rgb(29 15 48 / 0.6);
+  backdrop-filter: blur(4px);
+}
+
+dialog[open] {
+  animation: dialog-in 0.25s ease-out;
+}
+
+@keyframes dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
