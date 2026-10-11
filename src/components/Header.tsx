@@ -55,7 +55,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Nav }) {
           <Logo tagline={dict.tagline} className="[&_svg]:text-current" />
         </a>
 
-        <nav aria-label="Main" className="hidden items-center gap-7 text-sm font-medium xl:flex">
+        <nav aria-label="Main" className="hidden items-center gap-5 text-[0.78rem] font-semibold uppercase tracking-[0.06em] xl:flex">
           {links.map(([href, label]) => (
             <a key={href} href={href} className="opacity-80 transition hover:opacity-100">
               {label}
@@ -102,7 +102,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Nav }) {
               key={href}
               href={href}
               onClick={() => setOpen(false)}
-              className="border-b border-line py-4 font-display text-2xl font-semibold"
+              className="border-b border-line py-4 font-display text-xl font-semibold uppercase tracking-wide"
             >
               {label}
             </a>
